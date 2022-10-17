@@ -1,10 +1,13 @@
 #Hangman
-# from replit import clear
 import random
-# import hangman_words
-# import hangman_art
 from hangman_art import logo, stages
 from hangman_words import word_list
+from os import system, name
+from time import sleep
+
+def clear():
+      _ = system('cls')
+sleep(2)
 
 print(logo)
 end_of_game = False
@@ -22,7 +25,7 @@ for _ in range(word_lenght):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-    # clear()
+    clear()
     
     if guess in display:
       print(f"You've already guessed {guess}")
