@@ -7,7 +7,7 @@ from time import sleep
 
 def clear():
       _ = system('cls')
-sleep(2)
+sleep(1)
 
 print(logo)
 end_of_game = False
